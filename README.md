@@ -106,7 +106,8 @@ Smart-Railway-Platform-Clock-Announcement-Controller/
 
 ## 🧩 System Architecture (Block Diagram)
 
-<img width="1264" height="842" alt="block_diagram (1)" src="https://github.com/user-attachments/assets/8e82e4ec-13c0-4285-a235-be1742fd4b06" />
+<img width="1264" height="842" alt="blockdia" src="https://github.com/user-attachments/assets/0d8ec7d8-ab0f-4ad7-9d4d-3ee6b629ecd9" />
+
 
 **Signal flow:**
 - **Inputs** → Admin Edit Switch (external interrupt, EINT1), 4x4 Matrix Keypad, the LPC2148's on-chip RTC, and the train schedule table stored in MCU memory (`trainDB.c`).
