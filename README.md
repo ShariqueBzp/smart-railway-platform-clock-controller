@@ -106,7 +106,7 @@ Smart-Railway-Platform-Clock-Announcement-Controller/
 
 ## 🧩 System Architecture (Block Diagram)
 
-![Block Diagram](images/block_diagram.png)
+<img width="1264" height="842" alt="block_diagram (1)" src="https://github.com/user-attachments/assets/8e82e4ec-13c0-4285-a235-be1742fd4b06" />
 
 **Signal flow:**
 - **Inputs** → Admin Edit Switch (external interrupt, EINT1), 4x4 Matrix Keypad, the LPC2148's on-chip RTC, and the train schedule table stored in MCU memory (`trainDB.c`).
@@ -122,7 +122,8 @@ Smart-Railway-Platform-Clock-Announcement-Controller/
 
 End-to-end process flow of the firmware's main loop and the 3-window train display logic:
 
-![Flow Chart](images/flowchart.png)
+<img width="1024" height="1536" alt="flowchart" src="https://github.com/user-attachments/assets/fce73b44-c216-476f-8460-160adb0bc820" />
+
 
 **Data movement summary:**
 1. RTC (`GetRTCTimeInfo` / `GetRTCDateInfo` / `GetRTCDay`) → `CheckTrainSchedules()` compares current time vs. each train's delay-adjusted arrival/departure time.
