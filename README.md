@@ -279,20 +279,28 @@ Sourced directly from `all_peripheral_defines.h`:
 
 ## 📸 Application Screenshots / Results
 
-> Add photos/screen captures of the running system here to demonstrate actual execution and validate results.
+> Photos/screen captures of the running system demonstrating actual execution and validating results.
 
-| Screenshot | Description |
+The following composite image consolidates all eight operational states of the system, from real-time clock display to admin menu navigation and train edit workflows.
+
+<img width="1742" height="608" alt="resultofproject" src="https://github.com/user-attachments/assets/7a59e3d8-6a42-4e10-991c-ad45ecff952b" />
+
+
+
+### 🗺️ Visual Validation Reference
+
+| Location in Composite Image | Description of System State |
 |---|---|
-| `images/results/clock_display.jpg` | LCD showing live time, day, and date during the Clock/Date view |
-| `images/results/window1_all_trains.jpg` | Window 1 — LCD cycling through all trains with Green LED |
-| `images/results/window2_upcoming_train.jpg` | Window 2 — LCD locked on the next upcoming train, Yellow/Green LED |
-| `images/results/window3_active_train.jpg` | Window 3 — LCD showing the active/arrived train, Yellow LED, buzzer active |
-| `images/results/delayed_train.jpg` | LCD showing a delayed train's updated arrival/departure and Red LED |
-| `images/results/admin_pin_prompt.jpg` | Admin PIN entry screen after pressing the edit switch |
-| `images/results/admin_dashboard.jpg` | Admin Dashboard (`A:RTC B:TrainDB C:Pass D:Exit`) |
-| `images/results/train_edit_flow.jpg` | Sequence of LCD prompts while editing a train's platform/delay/timing |
+| **Top-Left** | LCD showing live time, day, and date during the Clock/Date view |
+| **Top-Right** | Window 1 — LCD cycling through all trains with Green LED active |
+| **Middle-Left** | Window 2 — LCD locked on the next upcoming train, Yellow LED active |
+| **Bottom-Left** | Window 3 — LCD showing the active/arrived train, Yellow LED, buzzer active |
+| **Bottom-Right** | LCD showing a delayed train's updated arrival/departure and Red LED active |
+| **Upper-Middle-Right** | Admin PIN entry screen after pressing the edit switch |
+| **Lower-Middle-Right** | Admin Dashboard (`A:RTC B:TrainDB C:Pass D:Exit`) |
+| **All Edit-State Screens** | Sequence of LCD prompts while editing a train's platform/delay/timing |
 
-*(Replace the placeholders above with your actual captured images before final submission, and update the file names/paths to match.)*
+*(Note: All results are validated within the single frame `images/results/system_overview_all.png`.)*
 
 ---
 
@@ -314,10 +322,9 @@ As per the assigned project workflow, before submitting the GitHub repository li
 
 ## 👤 Author
 
-- **Student Name:** _[Add your name]_
-- **Roll No / ID:** _[Add ID]_
-- **Project Duration:** _[Add assigned dates]_
-- **Guide/Mentor:** _[Add mentor name]_
+- **Student Name:** _[MD SHARIQUE]_
+- **Roll No / ID:** _[V25HE10M13]_
+- **Guide/Mentor:** _[Mr.Chandramouli Sir]_
 
 ---
 
