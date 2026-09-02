@@ -325,7 +325,7 @@ As per the assigned project workflow, before submitting the GitHub repository li
 
 - **Student Name:** _MD SHARIQUE_
 - **Roll No / ID:** _V25HE10M13_
-- **Guide/Mentor:** _Mr.Chandramouli Sir
+- **Guide/Mentor:** Mr.Chandramouli Sir
 
 ---
 
