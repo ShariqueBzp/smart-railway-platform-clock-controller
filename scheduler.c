@@ -72,6 +72,7 @@ void DisplayActiveTrainStatus(void)
     u32 minFutureArr = 0xFFFFFFFF; 
     u32 minOverallArr = 0xFFFFFFFF;
     s8 futureTrainIdx = -1;
+
     s8 earliestTrainIdx = 0;
     
     u8 i = 0;
@@ -92,8 +93,8 @@ void DisplayActiveTrainStatus(void)
     u8 activeWindow;
     
     s8 headerText[] = "PF  AT  DT  DLY ";
-    s8 arrStatus[]  = "ARRIVED";
-    s8 depStatus[]  = "DEPARTED";
+    s8 arrStatus[]  = "CAME";
+    s8 depStatus[]  = "GONE";
 
     currentMins = (HOUR * 60) + MIN;
     currentTotalSecs = (HOUR * 3600) + (MIN * 60) + SEC;
@@ -295,7 +296,8 @@ void DisplayActiveTrainStatus(void)
             /* ARRIVED status message with RTC time (less frequency/shorter duration as requested) */
             i = 0;
             line2Text[i++] = (HOUR / 10) + '0'; line2Text[i++] = (HOUR % 10) + '0'; line2Text[i++] = ':';
-            line2Text[i++] = (MIN / 10) + '0';  line2Text[i++] = (MIN % 10) + '0';  line2Text[i++] = ' ';
+            line2Text[i++] = (MIN / 10) + '0';  line2Text[i++] = (MIN % 10) + '0';  line2Text[i++] = ':';
+			line2Text[i++] = (SEC / 10) + '0';  line2Text[i++] = (SEC % 10) + '0';  line2Text[i++] = ' ';
             k = 0;
             while(arrStatus[k] != '\0') line2Text[i++] = arrStatus[k++];
             
@@ -307,7 +309,8 @@ void DisplayActiveTrainStatus(void)
             /* DEPARTED status message with RTC time after departure */
             i = 0;
             line2Text[i++] = (HOUR / 10) + '0'; line2Text[i++] = (HOUR % 10) + '0'; line2Text[i++] = ':';
-            line2Text[i++] = (MIN / 10) + '0';  line2Text[i++] = (MIN % 10) + '0';  line2Text[i++] = ' ';
+            line2Text[i++] = (MIN / 10) + '0';  line2Text[i++] = (MIN % 10) + '0';  line2Text[i++] = ' :';
+			line2Text[i++] = (SEC / 10) + '0';  line2Text[i++] = (SEC % 10) + '0';  line2Text[i++] = ' ';
             k = 0;
             while(depStatus[k] != '\0') line2Text[i++] = depStatus[k++];
             
